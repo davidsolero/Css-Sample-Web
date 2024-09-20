@@ -1,0 +1,205 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: verdana;
+  font-size: 0.529cm;
+  font-weight: 550;
+}
+
+.flex-containerrow {
+  display: flex;
+  flex-direction: row;
+  margin: 0 2.64cm 0.264cm 2.64cm;
+}
+
+.flex-containercolumn {
+  display: flex;
+  flex-direction: column
+}
+
+
+.circle {
+  height: 1.852cm;
+  width: 1.852cm;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+ul.abovelist {
+  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0.132cm;
+  margin: 0 0.926cm 0 0;
+  text-align: right;
+}
+
+
+ul.belowlist {
+  list-style-type: none;
+  margin: 0.264cm 0.926cm 0 0;
+  padding: 0.132cm;
+  background-color: gray;
+  text-align: right;
+  width: fit-content;
+  margin-left: auto;
+  /* Moves the list to the right */
+}
+
+li {
+  text-align: right;
+  display: inline;
+}
+
+.events-li {
+  list-style-type: square;
+  /* O cualquier otro estilo que prefieras */
+  text-align: left;
+  /* Por ejemplo, cambiar alineación */
+  display: list-item;
+  /* Asegura que se comporte como un ítem de lista */
+}
+
+#eventlist {
+  list-style-type: square;
+
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.block1 {
+  background-color: orange;
+  float: left;
+  width: 100%;
+  height: 6.614cm;
+  margin: 0 0.132cm 0 0.132cm;
+  background-image: url('pexels-pashal-337909.jpg');
+  background-size: cover;
+  /* Adjusts the size of the image */
+  background-position: center;
+  /* Centers the image */
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+}
+
+.block2 {
+  background-color: orange;
+  float: left;
+  width: 45%;
+
+  height: 6.614cm;
+  margin: 0 0.132cm 0 0.132cm;
+
+}
+
+.block3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: orange;
+  width: 25%;
+  height: 6.614cm;
+  margin: 0 0.132cm 0 0.132cm;
+
+}
+
+.whitebox {
+  width: max-content;
+  background-color: white;
+  padding: 0.264cm;
+  color: black;
+  /*justify-content: flex-start;*/
+  /* Alínea horizontalmente a la izquierda */
+  align-items: flex-end;
+
+}
+
+.celestebox {
+  width: max-content;
+  background-color: darkturquoise;
+  padding: 0.264cm;
+
+}
+
+.triangle-left {
+  width: 150;
+  height: 150;
+  border-top: 0.529cm solid transparent;
+  border-bottom: 0.529cm solid transparent;
+  border-right: 0.529cm solid white;
+  position: absolute;
+  left: -0.529cm;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+img {
+  background-color: orange;
+
+}
+
+.left-panel {
+  width: 50%;
+}
+
+.right-panel {
+  display: none;
+  position: relative;
+  /* Añadido para posicionar correctamente el triángulo */
+  background-color: white;
+  width: 50%;
+  padding: 0.529cm;
+
+}
+
+/* Mostrar el .right-panel cuando el mouse está sobre el contenedor .block2 */
+.block2:hover .right-panel,
+.right-panel:hover {
+  display: block;
+}
+
+
+.right-panel h1 {
+  color: lightblue;
+  font-size: 0.529cm;
+}
+
+.twitter-timeline {
+  width: 100%;
+  /* Asegura que el feed ocupe todo el ancho disponible */
+  height: 6.614cm;
+  /* Define la altura del feed */
+  border: 1px solid #e1e8ed;
+  /* Añadir borde al feed */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  overflow: scroll;
+  /*Para poder navegar*/
+}
+
+
+hr {
+  font-size: 2;
+  margin: 0.15cm;
+  color: white;
+}
+
+p {
+  color: black;
+  font-family: verdana;
+  font-size: 0.277cm;
+}

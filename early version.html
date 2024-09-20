@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+  background-color: black;
+  color: white;
+  font-family: verdana;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.flex-containerrow {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 100px 10px 100px;
+}
+
+.flex-containercolumn {
+  display: flex;
+  flex-direction: column
+}
+
+
+.circle {
+  height: 70px;
+  width: 70px;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+ul.abovelist {
+  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  margin: 0 35px 0 0;
+  text-align: right;
+}
+
+
+ul.belowlist {
+  list-style-type: none;
+  margin: 10px 35px 0 0;
+  padding: 5px;
+  background-color: gray;
+  text-align: right;
+  width: fit-content;
+  margin-left: auto;
+  /* Moves the list to the right */
+}
+
+li {
+  text-align: right;
+  display: inline;
+}
+
+#eventlist {
+  list-style-type: square;
+  display: inline-block;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.block1 {
+  background-color: orange;
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 250px;
+  margin: 0 5px 0 5px;
+
+}
+
+.block2 {
+  background-color: orange;
+  float: left;
+  width: 45%;
+  padding: 10px;
+  height: 250px;
+  margin: 0 5px 0 5px;
+
+}
+
+.block3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: orange;
+  width: 25%;
+  padding: 10px;
+  height: 250px;
+  margin: 0 5px 0 5px;
+
+}
+
+.whitebox {
+  width: max-content;
+  background-color: white;
+  padding: 10px;
+  color: black;
+  /*justify-content: flex-start;*/
+  /* AlÃ­nea horizontalmente a la izquierda */
+  align-items: flex-end;
+
+}
+
+.celestebox {
+  width: max-content;
+  background-color: darkturquoise;
+  padding: 10px;
+
+}
+
+img {
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.left-panel {
+  background-color: orange;
+  width: 50%;
+
+}
+
+.right-panel {
+  background-color: white;
+  width: 50%;
+  padding: 20px;
+
+}
+
+.right-panel h1 {
+  color: lightblue;
+  font-size: 20px;
+}
+
+hr {
+  font-size: 2;
+  margin: 0.15cm;
+  color: white;
+}
+
+p {
+  color: black;
+  font-family: verdana;
+  font-size: 10.5px;
+}
+  </style>
+</head>
+
+<body>
+
+  <div class="flex-containerrow" style="margin: 15px 100px 10px 100px;">
+    <div class="circle"></div>
+    <div class="flex-containercolumn" style="flex-grow: 9">
+      <div>
+        <ul class="abovelist">
+          <li><a href="https://.youtube.com/" target="_blank">Link 1 </a></li>|
+          <li><a href="httpswww.youtube.com/" target="_blank">Link 2 </a></li>|
+          <li><a href="ht://www.youtube.com/" target="_blank">Link 3 </a></li>|
+          <li><a href="http://www.youtube.com/" target="_blank">Link 4 </a></li>|
+          <li><a href="htts://www.youtube.com/" target="_blank">Link 5 </a></li>|
+          <li><a href="htps://www.youtube.com/" target="_blank">Link 6 </a></li>
+          <input type="text" placeholder="Search">
+        </ul class="abovelist">
+      </div>
+      <div>
+        <ul class="belowlist">
+          <li><a href="default.asp">Link 1 </a></li>|
+          <li><a href="news.asp">Link 2 </a></li>|
+          <li><a href="contact.asp">Link 3 </a></li>|
+          <li><a href="about.asp">Link 4 </a></li>|
+          <li><a href="default.asp">Link 5 </a></li>|
+          <li><a href="news.asp">Link 6 </a></li>|
+          <li><a href="contact.asp">Link 7 </a></li>|
+          <li><a href="about.asp">Link 8 </a></li>|
+          <li><a href="about.asp">Link 9 </a></li>
+        </ul class="belowlist">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flex-containerrow">
+    <div class="block1">
+      <div class="celestebox" style="margin-top: 150px;">Hola buenas tardes!</div>
+      <div class="whitebox"> Hola buenas tardes se me cuida mucho y bebe agua que hace falta</div>
+    </div>
+  </div>
+
+  <div class="flex-containerrow">
+
+    <div class="block3" style="background-color: darkturquoise; font-size: 15px;">
+      La lista de la compra
+      <hr>
+      <ul id="eventlist">
+        <li>AaAAAAAAasdasdas</li>
+        <li>AaAAAAAAasdasdas</li>
+        <li>AaAAAAAAasdasdas</li>
+        <li>AaAAAAAAasdasdas</li>
+        <li>AaAAAAAAasdasdas</li>
+        <li>AaAAAAAAasdasdas</li>
+      </ul>
+      <br>
+      <br>
+      <hr>
+      <div class="flex-containerrow">
+        <div style="flex-grow: 5;">
+          <a href="default.asp">Link 1 </a>
+        </div>
+        <div style="flex-grow: 5;">
+          <a href="default.asp">Link 2</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="block3" style="padding: 0; height: 270px;">
+      <div class="celestebox">Hola buenas tardes!</div>
+      <div class="whitebox" style=" width: fit-content;"> Hola buenas tardes se me cuida mucho y bebe agua que
+        hace falta</div>
+    </div>
+
+    <div class="block2" style="padding: 0; height: 270px; width: 50%;">
+      <div class="flex-containerrow" style="margin: 0;">
+        <span class="left-panel"></span>
+        <span class="right-panel" style="height: 230px;">
+          <h1 style="font-size: 15px;">El ex atenta dentro llevar garcia de se!</h1>
+          <p>
+            Senaladas conseguir ano tertulios contenido mil esa irritante elegantes.
+            Empresa feroces ver mis repetir arrulla sin asi fuertes. Lo su iconoteca
+            antojaban oh personaje. Indigno uno ley uso pre ceguera esencia. Ti cierto
+            palida se posada. Sus que estimarlos levantarse condenasen fue. Infiernos
+            acudiendo elegancia te suspiraba me un pulcritud enfermizo.
+          </p>
+          <div class="links">
+            
+            <a href="#" style="color: lightblue;">Link 1</a><br />
+            <a href="#" style="color: lightblue;">Link 2</a>
+
+        </span>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="flex-containerrow">
+    <div class="block3" style="background-color: white; justify-content: flex-start; font-weight: bold;">
+      <p style="font-size: 30px;">This container should be covered with playable video.
+      </p>
+    </div>
+
+
+    <div class="block2">
+    </div>
+
+    <div class="block3" style="background-color: white; justify-content: flex-start; font-weight: bold;">
+      <p style="font-size: 30px;">This container should be covered with a feed.</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
